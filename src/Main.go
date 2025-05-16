@@ -7,7 +7,7 @@ func main() {
 	var eingabe int
 
 	fmt.Print("Type: ")
-	_, err := fmt.Scan(&eingabe) // pointer = & + _ = zweiter Rückgabewert
+	_, err := fmt.Scan(&eingabe) // pointer = & | ausserdem _ = zweiter Rückgabewert
 
 	if err != nil {
 		fmt.Println("Fehler bei der Eingabe:", err)
