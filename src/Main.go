@@ -2,24 +2,45 @@ package main
 
 import "fmt"
 
+type Ergebnis struct {
+	Zahl          int
+	Eigenschaften map[string]string // [key]value
+}
+
 func main() {
 
 	var eingabe int
 
-	fmt.Print("Type: ")
+	fmt.Print("Zahl: ")
 	_, err := fmt.Scan(&eingabe) // pointer = & | ausserdem _ = zweiter Rückgabewert
 
 	if err != nil {
 		fmt.Println("Fehler bei der Eingabe:", err)
-		return // Programm abbrechen
+		return
 	}
 
-	// TODO: Eingabe verarbeiten (z. B. Wort zählen, Text analysieren)
+	ergebnis := analysiereZahl(eingabe)
 
-	// TODO: Ergebnis strukturieren (z. B. mit struct, map oder slice)
-
-	fmt.Println("Ergebnis")
-	fmt.Println(eingabe)
+	fmt.Println("Zahl:", ergebnis.Zahl)
+	for k, v := range ergebnis.Eigenschaften { // range = gehe durch map (Eigenschaften)
+		fmt.Println(k+":", v)
+	}
 }
 
-// TODO: Eigene Funktion(en) zur Analyse oder Berechnung implementieren
+func analysiereZahl(n int) Ergebnis {
+
+	eigenschaften := make(map[string]string)
+
+	if n > 0 {
+		eigenschaften["Vorzeichen"] = "positiv"
+	} else if n < 0 {
+		eigenschaften["Vorzeichen"] = "negativ"
+	} else {
+		eigenschaften["Vorzeichen"] = "null"
+	}
+
+	return Ergebnis{ // zahl mit map geben
+		Zahl:          n,
+		Eigenschaften: eigenschaften,
+	}
+}

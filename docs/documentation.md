@@ -24,6 +24,9 @@ Erarbeitung der Grundlagen von Go (Syntax, Kontrollstrukturen, Funktionen) und U
 * Go Tour (https://go.dev/tour/list)
 * Golang User Input (https://www.w3schools.com/go/go_input.php)
 * Golang Error Handling (https://go.dev/blog/error-handling-and-go)
+* Golang Structs (https://www.w3schools.com/go/go_struct.php)
+* Golang Mapping - ChatGPT Prompt: "Erkläre mir ganz simpel Mapping in Golang"
+* Golang Mapping (https://gobyexample.com/range)
 
 ### Unterschiede zu Java und Python:
 
