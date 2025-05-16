@@ -14,13 +14,12 @@ func main() {
 		return // Programm abbrechen
 	}
 
-	// TODO: Fehlerbehandlung bei der Eingabe
-
 	// TODO: Eingabe verarbeiten (z. B. Wort zählen, Text analysieren)
 
 	// TODO: Ergebnis strukturieren (z. B. mit struct, map oder slice)
 
-	// TODO: Ergebnisse ausgeben (formatierte Ausgabe)
+	fmt.Println("Ergebnis")
+	fmt.Println(eingabe)
 }
 
 // TODO: Eigene Funktion(en) zur Analyse oder Berechnung implementieren
