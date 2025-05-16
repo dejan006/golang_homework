@@ -17,17 +17,9 @@ Erarbeitung der Grundlagen von Go (Syntax, Kontrollstrukturen, Funktionen) und U
 
 ---
 
-### Umsetzungsidee (optional):
-
-*Hier kann kurz beschrieben werden, was die Applikation konkret macht.*
-
----
-
 ### Verwendete Ressourcen:
 
-*Welche Quellen, Dokumentationen, Tutorials oder Bücher wurden genutzt? Bitte genau angeben.*
-
----
+* ChatGPT (https://chat.openai.com): Grundstruktur Code mit `// TODO`-Kommentaren + Dokumentation Grundstruktur
 
 ### Unterschiede zu Java und Python:
 
